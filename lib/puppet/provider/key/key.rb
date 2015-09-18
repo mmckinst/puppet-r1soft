@@ -12,7 +12,7 @@ Puppet::Type.type(:key).provide(:key) do
   end
 
   def exists?
-    system("r1soft-setup --list-keys | grep -qF '[[:space:]]#{resource[:hostname]}$'")
+    system("r1soft-setup --list-keys | grep -qF '#{resource[:hostname]}'")
   end
 
 end
