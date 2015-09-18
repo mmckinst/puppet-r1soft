@@ -14,8 +14,8 @@ Puppet::Type.newtype(:key) do
   end
 
   newparam(:port) do
-    desc 'Specify port number to use for the connection. (default: 9443)'
-    defaultto '9443'
+    desc 'Specify port number to use for the connection. (default: 443)'
+    defaultto '443'
   end
 
 end
