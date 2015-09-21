@@ -11,4 +11,7 @@ class r1soft::params {
   $kernel_module_name         = 'hcpdriver'
   $service_manage             = true
   $service_name               = 'cdp-agent'
+  $add_server_key             = true
+  $server                     = 'r1bs-22.nexcess.net'
+  $server_port                = '443'
 }

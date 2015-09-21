@@ -12,6 +12,7 @@ describe 'r1soft::agent' do
           it { should contain_class('r1soft::agent::kernel_package') }
           it { should contain_class('r1soft::agent::install') }
           it { should contain_class('r1soft::agent::kernel_module') }
+          it { should contain_class('r1soft::agent::key') }
           it { should contain_class('r1soft::agent::service') }
           
           describe 'r1soft::repo' do
