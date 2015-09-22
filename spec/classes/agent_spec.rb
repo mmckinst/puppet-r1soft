@@ -38,6 +38,11 @@ describe 'r1soft::agent' do
             it { should contain_service('cdp-agent').with_ensure('running') }
             it { should contain_service('cdp-agent').with_enable('true') }
           end
+
+          #describe 'r1soft::agent::service' do
+          #  it { should contain_key('r1bs-22.nexcess.net').with_port('443') }
+          #  it { should contain_key('r1bs-22.nexcess.net').with_scheme('https') }
+          #end
         end
       end
     end

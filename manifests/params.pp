@@ -12,6 +12,6 @@ class r1soft::params {
   $service_manage             = true
   $service_name               = 'cdp-agent'
   $add_server_key             = true
-  $server                     = 'r1bs-22.nexcess.net'
+  $r1soft_server              = 'r1bs-22.nexcess.net'
   $server_port                = '443'
 }

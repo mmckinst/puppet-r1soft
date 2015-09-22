@@ -5,7 +5,8 @@ class r1soft::agent::kernel_package(
 ) inherits r1soft::params {
   if $kernel_devel_install {
     package { $kernel_devel_package_names:
-      ensure => $cdp_agent_version,
+      ensure  => $cdp_agent_version,
+      require => Class['r1soft::agent::install']
     }
   }
 }
